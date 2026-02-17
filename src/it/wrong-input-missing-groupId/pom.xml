@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.eclipse.kura</groupId>
-    <artifactId>wrong-input-missing-artifactId</artifactId>
+    <artifactId>wrong-input-missing-groupId</artifactId>
     <version>${plugin.version}</version>
 
     <build>
