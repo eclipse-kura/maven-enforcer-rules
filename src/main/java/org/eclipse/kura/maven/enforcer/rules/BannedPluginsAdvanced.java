@@ -95,13 +95,6 @@ public class BannedPluginsAdvanced extends AbstractEnforcerRule {
         return false;
     }
 
-    /**
-     * A good practice is provided toString method for Enforcer Rule.
-     * <p>
-     * Output is used in verbose Maven logs, can help during investigate problems.
-     *
-     * @return rule description
-     */
     @Override
     public String toString() {
         return String.format("BannedPluginsAdvanced[%s, %s]", message, bannedPlugins);
