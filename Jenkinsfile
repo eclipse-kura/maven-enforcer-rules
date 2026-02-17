@@ -20,8 +20,8 @@ node {
         timeout(time: 10, unit: 'MINUTES') {
             dir("maven-enforcer-rules") {
                 withMaven(
-                    jdk: pipelineParams.toolchain.jdk,
-                    maven: pipelineParams.toolchain.maven,
+                    jdk: 'temurin-jdk17-latest',
+                    maven: 'apache-maven-3.9.10',
                     options: [artifactsPublisher(disabled: true)]
                 ) {
                     sh "mvn verify"
@@ -35,8 +35,8 @@ node {
             timeout(time: 5, unit: 'MINUTES') {
                 dir("maven-enforcer-rules") {
                     withMaven(
-                        jdk: pipelineParams.toolchain.jdk,
-                        maven: pipelineParams.toolchain.maven,
+                        jdk: 'temurin-jdk17-latest',
+                        maven: 'apache-maven-3.9.10',
                         options: [artifactsPublisher(disabled: true)]
                     ) {
                         sh "mvn clean deploy -DskipTests"
