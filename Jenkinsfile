@@ -21,7 +21,7 @@ node {
             dir("maven-enforcer-rules") {
                 withMaven(
                     jdk: 'temurin-jdk17-latest',
-                    maven: 'apache-maven-3.9.10',
+                    maven: 'apache-maven-3.9.11',
                     options: [artifactsPublisher(disabled: true)]
                 ) {
                     sh "mvn verify"
@@ -36,7 +36,7 @@ node {
                 dir("maven-enforcer-rules") {
                     withMaven(
                         jdk: 'temurin-jdk17-latest',
-                        maven: 'apache-maven-3.9.10',
+                        maven: 'apache-maven-3.9.11',
                         options: [artifactsPublisher(disabled: true)]
                     ) {
                         sh "mvn clean deploy -DskipTests"
