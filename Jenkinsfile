@@ -17,7 +17,7 @@ node {
     }
 
     stage('Build') {
-        timeout(time: 10, unit: 'MINUTES') {
+        timeout(time: 30, unit: 'MINUTES') {
             dir("maven-enforcer-rules") {
                 withMaven(
                     jdk: 'temurin-jdk17-latest',
@@ -32,7 +32,7 @@ node {
 
     stage('Deploy') {
         if (env.BRANCH_IS_PRIMARY) {
-            timeout(time: 5, unit: 'MINUTES') {
+            timeout(time: 15, unit: 'MINUTES') {
                 dir("maven-enforcer-rules") {
                     withMaven(
                         jdk: 'temurin-jdk17-latest',
