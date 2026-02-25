@@ -1,0 +1,16 @@
+Eclipse Kura Maven Enforcer Rules - 1.0.0 - February 2026
+-------------------------------------------------------------------------------------------------
+Description:
+The first version of the maven-enforcer-rules allows to apply additional rulesets to the org.apache.maven.plugins:maven-enforcer-plugin. This version provides the rule bannedPluginsAdvanced which extends the built-in rule bannedPlugins to specify also the goal to ban.
+
+Features:
+  * a21d3219a5: first contribution (#1) (Marcello Rinaldo Martina)
+
+Requirements:
+  * Java 17
+  * Maven Enforcer Plugin >=3.6.2, <4.0.0
+  * Maven >= 3.9.10
+
+Changelog:
+  * a21d3219a5 - feat: first contribution (#1) (Marcello Rinaldo Martina)
+  * 2286c70de2 - Initial commit (eclipse-otterdog[bot])
