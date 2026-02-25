@@ -20,7 +20,7 @@
 
     <groupId>org.eclipse.kura</groupId>
     <artifactId>maven-enforcer-rules</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>Additional ruleset for Maven Enforcer Plugin</name>
     <description>Additional rules for maven-enforcer-plugin</description>
