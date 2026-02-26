@@ -50,7 +50,7 @@ If you want to ban more versions (or goals) of the same plugin, just repeat the 
             <dependency>
                 <groupId>org.eclipse.kura</groupId>
                 <artifactId>maven-enforcer-rules</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
         <executions>
